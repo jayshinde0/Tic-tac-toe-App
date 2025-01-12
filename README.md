@@ -15,8 +15,6 @@ A simple React-based implementation of the classic Tic-Tac-Toe game. Players can
 
 ---
 
-## 📸 Screenshots
-![Game Screenshot](path/to/your/screenshot.png)
 
 ---
 
@@ -95,4 +93,3 @@ If you have any suggestions or improvements, feel free to raise an issue or crea
 GitHub: [jayshinde0](https://github.com/jayshinde0)  
 ```
 
-Replace the placeholder in the **Screenshots** section with the actual path to a screenshot of your app, or you can remove that section if not applicable. Let me know if you'd like further customization!
