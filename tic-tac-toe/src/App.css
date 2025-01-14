@@ -71,53 +71,58 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
+}/* Responsive Design for Phones */
 /* Responsive Design for Phones */
 @media (max-width: 480px) {
   /* Adjust the app layout */
   .App {
     flex-direction: column; /* Stack items vertically */
-    height: auto; /* Remove fixed height for better scrollability */
-    padding: 10px; /* Add padding for better spacing */
+    height: auto; /* Allow natural height */
+    padding: 10px; /* Add padding for spacing */
   }
 
   /* Adjust the board container */
   .boardcontainer {
     width: 100%; /* Use the full width of the screen */
-    max-width: 320px; /* Limit width to prevent excessive stretching */
+    max-width: 320px; /* Prevent excessive stretching */
     padding: 10px;
     margin-top: 10px;
-    box-shadow: none; /* Simplify design for smaller devices */
-    border: 1px solid #ddd; /* Maintain a clean border */
+    box-shadow: none; /* Simplify design */
+    border: 1px solid #ddd; /* Maintain clean border */
   }
 
   /* Square size and font adjustments */
   .square {
-    flex: 1 1 auto; /* Allow squares to scale flexibly */
-    width: 30%; /* Smaller width for better fit */
-    height: 30vw; /* Use viewport width for responsive square sizes */
+    width: 30%; /* Set width to 30% of the row */
+    aspect-ratio: 1 / 1; /* Maintain perfect square aspect ratio */
     font-size: 1.5rem; /* Adjust font size for smaller screens */
-    line-height: 1.5; /* Improve text alignment inside squares */
+    line-height: 1.5; /* Improve text alignment */
     margin: 1%; /* Add spacing between squares */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
   }
 
   /* Ensure board rows align correctly */
   .board-row {
-    width: 100%; /* Adjust width for small screens */
-    justify-content: space-between; /* Add spacing between squares */
+    width: 100%; /* Full width for smaller screens */
+    justify-content: space-evenly; /* Add even spacing between squares */
+    display: flex;
   }
 
   /* Player turn and winner message adjustments */
   h4 {
-    font-size: 1rem; /* Reduce font size for messages */
-    text-align: center; /* Center align the text */
+    font-size: 1rem; /* Reduce font size */
+    text-align: center; /* Center-align the text */
     margin: 5px 0;
   }
 
   /* Button styling adjustments */
   button {
-    padding: 10px; /* Comfortable button size for touch devices */
-    font-size: 1rem; /* Maintain a slightly larger font */
+    padding: 10px; /* Comfortable button size */
+    font-size: 1rem; /* Maintain a larger font */
     width: 100%; /* Full-width button for ease of tapping */
     max-width: 320px; /* Restrict width for consistency */
   }
